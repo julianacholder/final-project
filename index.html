@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <section class="companies">
+ 
+    <div class="first">
+      <div class="first-header"></div>
+      <div class="first-text">
+        <h2>Waste <br> Segregation</h2>
+        <p>This is to remove <br> unwanted waste from the  streets <br> and help clean the  country</p>
+        <div>
+        <button>Know more</button>
+      </div>
+      </div>
+    </div>
+
+    <div class="second">
+      <div class="second-header"></div>
+      <div class="second-text">
+        <h2>Waste <br> Segregation</h2>
+        <p>This is to remove <br> unwanted waste from the  streets <br> and help clean the  country</p>
+        <div>
+        <button>Know more</button>
+      </div>
+      </div>
+    </div>
+
+    <div class="third">
+      <div class="third-header"></div>
+      <div class="third-text">
+        <h2>Waste <br> Segregation</h2>
+        <p>This is to remove <br> unwanted waste from the  streets <br> and help clean the  country</p>
+        <div>
+        <button>Know more</button>
+      </div>
+      </div>
+    </div>
+
+
+    
+   
+  </section>
+  <div class="tabs">
+    <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+    <label for="tab1" class="tabs__label">Pick-up request</label>
+    <div class="tabs__content">
+      <div class="main-content">
+      <h1>Pick a date and time which <br> is convinient for you</h1>
+      <div class="date-body">
+        <div class="date-content">
+          <div class="icon">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h3>Date</h3>
+          </div>
+          <div class="date">
+          <h1>Daily</h1>
+          <label for="">Select Date</label>
+          <input type="date" placeholder="select date">
+        </div>
+
+        <div class="location-content">
+          <div class="icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Location</h3>
+          </div>
+
+          <input type="text" placeholder="Enter your location">
+        </div>
+
+        <textarea placeholder="Enter furthur instructions here" id=""></textarea>
+        </div>
+        <div >
+          <div class="icon">
+            <i class="fa-regular fa-clock"></i>
+            <h3>Time</h3>
+          </div>
+          <div class="date">
+          <input type="time">
+        </div>
+          <div class="location-content">
+        <div class="icon">
+          <i class="fa-solid fa-trash"></i>
+          <h3>Garbage Cans</h3>
+        </div>
+        <input type="number" placeholder="Number of Garbage Cans">
+      </div>
+
+      <div class="location-content">
+        <div class="icon">
+          <i class="fa-solid fa-mobile"></i>
+          <h3>Phone number</h3>
+        </div>
+        <input type="text" placeholder="Enter Phone number">
+      </div>
+
+
+        </div>
+
+        
+      </div>
+      
+    </div>
+    <div class="submit-button">
+      <button id="submitBtn">
+        Submit
+      </button>
+    </div>
+  </div>
+    
+    <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+    <label for="tab2" class="tabs__label">Pick-up History</label>
+    <div class="tabs__content">
+      <h1>You have no pick-up history. Please make a request to see your history!</h1>
+    </div>
+    <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+    <label for="tab3" class="tabs__label">Recycle</label>
+    <div class="tabs__content">
+      <div class="recycle">
+        <div class="recycle-img">
+          <img src="/images/recycle.png" alt="">
+        </div>
+        <div class="forms">
+        <div class="form">
+         
+          <label for="itemType">1. What type of item would you like to recycle?</label>
+          <select id="itemType" name="itemType">
+            <option value="">Select an option</option>
+            <option value="plastic">Plastic</option>
+            <option value="paper">Paper</option>
+            <option value="metal">Metal</option>
+            <option value="glass">Glass</option>
+            <option value="electronics">Electronics</option>
+            <option value="other">Other</option>
+          </select>
+    
+          <label for="quantity">2. How many items do you want to recycle?</label>
+          <input type="number" id="quantity" name="quantity" min="1" placeholder="Enter quantity">
+        
+          <label for="additionalInfo">3. Any additional information or instructions?</label>
+          <textarea id="additionalInfo" name="additionalInfo" placeholder="Enter additional information"></textarea>
+          <div>
+          <button type="submit" id="submitBtn2">Submit</button>
+        </div>
+        </div>
+
+        <div class="form">
+         
+          <label for="itemType">2. Would you like to?</label>
+          <select id="itemType" name="itemType">
+            <option value="">Select an option</option>
+            <option value="plastic">Donate</option>
+            <option value="paper">Reuse</option>
+            <option value="metal">Recycle</option>
+          </select>
+    
+          
+        </div>
+      </div>
+      </div>
+    </div>
+    <input type="radio" class="tabs__radio" name="tabs-example" id="tab4">
+    <label for="tab4" class="tabs__label">Track environmental impact</label>
+    <div class="tabs__content">
+      <h1>Your Environmental Metrics will be shown here</h1>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="popup">
+    <div class="popup-img">
+      <img src="/images/second.png" alt="">
+    </div>
+    <p>Your request has been submitted.</p>
+    
+    <div class="popup-button">
+    <button onclick="closePopup()">Close</button>
+  </div>
+  </div>
+
+  <div class="overlay" id="overlay2"></div>
+  <div class="popup" id="popup2">
+    <div class="popup2-img">
+      <img src="/images/popup.png" alt="">
+    </div>
+    <p>One step closer to a greener Earth</p>
+    
+    <div class="popup-button">
+    <button onclick="closePopup2()">Close</button>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
